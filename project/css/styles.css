@@ -1,0 +1,68 @@
+.stopwatch{
+    width: 500px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px rgba(108, 122, 137, 1), 0 0 1px rgba(108, 122, 137, 1);
+    padding: 15px;
+}
+
+.controls{
+  display: flex;
+  background-color:black;
+}
+
+button{
+            flex-grow: 1;
+            margin: 0 5px 4px;
+            padding: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px rgba(108, 122, 137, 1);
+            border:0;
+            outline:0;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+}
+
+button:active{
+    margin-bottom: 0;
+    margin-top: 4px;
+    box-shadow: none;
+}
+
+.start{
+            background-color:darkred;
+}
+.start:hover {
+        background-color:coral;
+}
+
+
+.stop{
+    background-color:darkred;
+}
+.stop:hover {
+    background-color:coral;
+}
+
+
+.reset{
+    background-color: darkred;
+}
+.reset:hover {
+    background-color:coral;
+}
+
+
+.display{
+    color:white;
+    background-color: black;
+    font-size: 100px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.display :not(:last-child):after {
+    content: ':';
+}
